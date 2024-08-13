@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Hotel</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        #bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .nav-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+        .hero-content {
+            background-color: rgba(0,0,0,0.5);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        .cta-button {
+            background-color: white;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        .awards {
+            background-color: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .awards h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .awards p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .awards-image-container {
+            position: relative;
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .awards-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .award-years {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .award-year {
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .award-title {
+            font-size: 1.3em;
+            color: #333;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .offers {
+        padding: 4rem 2rem;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .offers h2 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    .offers p {
+        font-size: 1.2em;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
+    }
+    .offers-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .offer-image {
+        width: 450px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .offer-imagetwo{
+             width: 1200px;
+             height: 600px;
+
+    }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="nav-wrapper">
+            <a href="#" class="logo">Taj</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Memberships</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">Login/Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </section>
+
+    <section class="awards">
+        <h2>--- Celebrating Dual Wins ---</h2>
+        <p>Taj has yet again been ranked as World's Strongest Hotel Brand and India's Strongest Brand across sectors as per Brand Finance Hotels 50 Report 2024 and India 100 Report 2024. We owe this win to your unstinting love and support that keeps us inspired.</p>
+        <div class="awards-image-container">
+            <img src="t.jpg" alt="Taj Awards" class="awards-image">
+            <div class="award-years">
+                <div class="award-year">2024</div>
+                <div class="award-year">2023</div>
+                <div class="award-year">2022</div>
+            </div>
+        </div>
+        <div class="award-title">Ranked as World's Strongest Hotel Brand & India's Strongest Brand</div>
+    </section>
+    <section class="offers">
+        <h2>Latest Offers</h2>
+        <p>Reclaim your monsoon joy and dive into cool adventures at our picture-perfect destinations.</p>
+        <div class="offers-container">
+            <img src="t2.webp" alt="Offer 1" class="offer-image">
+            <img src="t3.webp" alt="Offer 2" class="offer-image">
+            <img src="t4.webp" alt="Offer 3" class="offer-image">
+        </div>
+    </section>
+    <section class="offers">
+        <h2>Explore
+            More
+            </h2>
+        <p>Relaxing beach paradises, thrilling urban getaways, exotic hill stations and historic homes of royalty are all within reach.</p>
+        <div class="offers-container">
+            <img src="t6.webp" alt="Offer 1" class="offer-image">                                           
+            <img src="t7.webp" alt="Offer 2" class="offer-image">
+            <img src="t8.webp" alt="Offer 3" class="offer-image">
+        </div>
+    </section>
+    <section class="offers">
+        <h2>J WELLNESS
+            CIRCLE</h2>
+        <p>Welcome to a sanctuary that seamlessly blends Indian heritage healing with serene contemporary comforts for the mind, body and soul.</p>
+        <div class="offers-container">
+            <img src="t5.webp" alt="Offer 1" class="offer-imagetwo">                                           
+           
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Easy Booking</h2>
+            <p>Simple online reservation system for a seamless experience</p>
+        </div>
+        <div class="feature">
+            <h2>Prime Location</h2>
+            <p>Situated in the heart of city attractions and landmarks</p>
+        </div>
+        <div class="feature">
+            <h2>24/7 Support</h2>
+            <p>Our dedicated team is always ready to assist you</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Taj Hotel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('Booking system coming soon!');
+        });
+    </script>
+</body>
+</html>
